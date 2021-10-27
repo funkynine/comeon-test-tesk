@@ -16,7 +16,7 @@ const GameItem: FC<GameItemProps> = ({ game }: any) => {
 	const history = useHistory();
 
 	const handleConnectToGame = (): void => {
-		history.push(`/game/${formattedString(game.name)}`);
+		history.push(`/game/${formattedString(game.code)}`);
 	};
 
 	return (
